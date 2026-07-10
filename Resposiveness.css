@@ -1,0 +1,154 @@
+
+/* 1150px */
+@media(max-width: n1150px){
+    .contanier{
+        padding: 0 40px;
+    }
+.aboutContent .img_section{
+    width: 100%;
+}
+.aboutContent .img_section img{
+    display: block;
+    margin: auto;
+}
+  
+#services .card_content{
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 2rem;
+}
+
+}
+
+@media(max-width: 905px){
+    .btn{
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+        flex-direction: column;
+        min-width: 280px;
+        min-height: 80vh;
+        top: 0;
+        right: -100%;
+        background: var(--darkcolor);
+        padding: 0.4rem 2.5rem;
+        align-items: flex-start;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+
+    nav.active{
+        right: 0%;
+        transition: all 1s ease-in-out;
+    }
+
+    nav li{
+        list-style: none;
+        margin-top: 2rem;
+    }
+
+    header nav .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    /* Hero Section */
+    #hero .content_manage{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    #hero .content_manage img{
+        display: none;
+    }
+
+    #hero .hero_content .txt_content{
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero .hero_content .txt-1{
+        font-size: 2.3rem;
+    }
+
+    #hero .hero_content .txt-2{
+        font-size: 3.7rem;
+    }
+
+    #hero .hero_content .normaltxt{
+        font-size: 2.7rem;
+    }
+
+    #hero .hero_content .changetxt{
+        font-size: 2.7rem;
+    }
+@media{max-width: 54 0px;}{
+    #hero .hero_content .txt-1{
+        font-size: 1.5rem;
+}
+
+#hero .hero_content .txt-2{
+    font-size: 2rem;
+ }
+
+    #hero .hero_content .normaltxt{
+        font-size: 1.5rem;
+     }
+
+        #hero .hero_content .changetxt{
+        font-size: 1.5rem;
+    }
+
+
+/* About resposiveness start */
+section{
+    padding: 3.5rem 0;
+}
+
+.aboutContent{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+}
+
+#about .tittle{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+#about .tittle::before{
+    content: "";
+    width: 15rem;
+    height: 4px;
+    background: var(--secondarycolor);
+    position: absolute;
+    top: 65%;
+}
+
+.aboutContent .img_section img{
+    width: 350px;
+    height: 350px;
+}
+
+/* About resposiveness close */
+  
+/* services start */
+#service .card_content{
+    grid-template-columns: repeat(1,1fr);
+}
+/* services close */
+
+/* skills */
+.skills_container
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 3rem;
+}
+
+/* Contact start */
+#contact .contact_container{
+    grid-template-columns: repeat(1,1fr);
+}
+/* Contact close */
+
+}
